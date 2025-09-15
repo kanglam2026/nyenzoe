@@ -1,0 +1,82 @@
+---
+// Props: Receive the array from the parent
+const { featuredApps, categories } = Astro.props;
+---
+
+<section class=" bg-gradient-to-br from-blue-900 to-blue-400">
+    <div class="container mx-auto px-6 py-12">
+        <div class="rounded-lg flex items-center justify-center my-5">
+            <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0">
+                    <a href="#" class="flex items-center space-x-2">
+                        <div class="w-10 h-10  rounded-lg flex items-center justify-center">
+                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 178.3 167.9">
+                                <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
+                                <defs>
+                                  <style>
+                                    .st0 {
+                                      fill: #ededed;
+                                    }
+                                  </style>
+                                </defs>
+                                <polygon class="st0" points="11.5 8.9 109 159.9 171.5 159.9 74 8.9 11.5 8.9"/>
+                                <polygon class="st0" points="169.5 8.9 116.5 8.9 169.5 90.9 169.5 8.9"/>
+                                <path class="st0" d="M13,77.9c-1.4.2.5,1.3.5,1.5.9,26.8-.7,53.7,0,80.5h52L14.5,77.9h-1.5Z"/>
+                              </svg>
+                        </div>
+                        <span class="text-xl font-bold text-white">Nyenzoe</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-100 mb-4">
+                Discover Amazing Apps
+            </h1>
+            <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+                Find the perfect Apps for your device. Download  from our curated collection.
+            </p>
+        </div>
+        
+        <!-- Featured Apps Carousel -->
+        <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {featuredApps.map(app => (
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-gray-200 rounded-xl flex items-center justify-center mr-4">
+                                <img src={app.icon} alt={app.title} class="w-12 h-12 rounded-lg object-cover" />
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg text-gray-900">{app.title}</h3>
+                                <p class="text-sm text-gray-600">{app.author}</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">{app.description}</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    {Array.from({length: 5}).map((_, i) => (
+                                        <svg key={i} class={`w-4 h-4 ${i < Math.floor(app.rating) ? 'text-yellow-400' : 'text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                        </svg>
+                                    ))}
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">{app.rating}</span>
+                            </div>
+                            <span class="text-sm text-gray-500">{app.downloads}</span>
+                        </div>
+                        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition font-medium">
+                            {app.price === "Free" ? "Install" : `Buy ${app.price}`}
+                        </button>
+                    </div>
+                </div>
+            ))}
+        </div> -->
+    
+        <div class="flex justify-center py-10">
+            <a href="#menu" class="text-xl font-bold text-blue-300 bg-blue-500 px-10 py-3 rounded-full shadow-md border-2 border-blue-400">EXPLORE</a>
+        </div>
+    </div>
+</section>
+
