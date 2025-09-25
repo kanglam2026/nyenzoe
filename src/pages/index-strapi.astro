@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// const res = await fetch("http://localhost:1337/api/articles");
+const res = await fetch("http://localhost:1337/api/articles?populate=category");
+const json = await res.json();
+const articles = json.data || [];
+---
+
+<Layout>
+  <section class="py-16 bg-gray-50">
+    <h1>Articles from Strapi</h1>
+   <div class="container  ">
+    
+     <div class="mx-0">
+      {articles.map((article) => (
+        <div class="p-3 border-2 border-black m-5 rounded-2xl">
+          <h2 class="text-xl font-bold">{article?.Title || "No title"}</h2>
+          <p>{article?.Content || "No content"}</p>
+          
+          {article.category && (
+            <p class="text-red-400">Category: {article.Category.name || "No content"}</p>
+          ) || "No category"}
+        </div>
+        
+      ))}
+      
+     </div>
+
+   </div>
+  </section>
+</Layout>
+

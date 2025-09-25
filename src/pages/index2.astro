@@ -1,128 +1,315 @@
 ---
 import Hero from '../components/Hero2.astro';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import CardThumbnail from '../components/CardThumbnail.astro';
 
-const featuredApps = [
-	{
-		title: "Dhungkar",
-		author: "Dhungkar Corporation",
-		icon: "/icons/dhung.jpg",
-		rating: 4.5,
-		downloads: "1M+",
-		category: "Productivity",
-		price: "Free",
-		description: "A powerful productivity app for modern professionals"
-	},
-	{
-		title: "Patra",
-		author: "Patra Corporation",
-		icon: "/icons/book.png",
-		rating: 4.2,
-		downloads: "500K+",
-		category: "Education",
-		price: "Free",
-		description: "Learn and explore with interactive content"
-	},
-	{
-		title: "TaskMaster Pro",
-		author: "Productivity Labs",
-		icon: "/icons/dhung.jpg",
-		rating: 4.8,
-		downloads: "2M+",
-		category: "Productivity",
-		price: "$4.99",
-		description: "Advanced task management for teams"
-	},
-	{
-		title: "Photo Editor Plus",
-		author: "Creative Studio",
-		icon: "/icons/book.png",
-		rating: 4.6,
-		downloads: "5M+",
-		category: "Photo & Video",
-		price: "Free",
-		description: "Professional photo editing made simple"
-	}
-];
-
-const categories = [
-	{ name: "Comunication", icon: "🎮", color: "bg-purple-500" },
-	{ name: "VPN", icon: "📊", color: "bg-blue-500" },
-	{ name: "Browsers", icon: "🎬", color: "bg-red-500" },
-	{ name: "Tools", icon: "📚", color: "bg-green-500" },
-
-];
-
-const topCharts = [
-	{ title: "WhatsApp", author: "WhatsApp Inc.", icon: "/icons/dhung.jpg", rating: 4.3, downloads: "5B+" },
-	{ title: "Instagram", author: "Meta", icon: "/icons/book.png", rating: 4.2, downloads: "1B+" },
-	{ title: "TikTok", author: "ByteDance", icon: "/icons/dhung.jpg", rating: 4.1, downloads: "1B+" },
-	{ title: "YouTube", author: "Google", icon: "/icons/book.png", rating: 4.4, downloads: "5B+" }
-];
 
 // Tab-specific app lists
 const tabApps = {
-	all: [
-		{ title: "WhatsApp", author: "WhatsApp Inc.", icon: "/icons/dhung.jpg", rating: 4.3, downloads: "5B+", category: "Communication" },
-		{ title: "Instagram", author: "Meta", icon: "/icons/book.png", rating: 4.2, downloads: "1B+", category: "Social" },
-		{ title: "Clash of Clans", author: "Supercell", icon: "/icons/dhung.jpg", rating: 4.5, downloads: "500M+", category: "Games" },
-		{ title: "Netflix", author: "Netflix Inc.", icon: "/icons/book.png", rating: 4.1, downloads: "1B+", category: "Entertainment" }
-	],
-	games: [
-		{ title: "Clash of Clans", author: "Supercell", icon: "/icons/dhung.jpg", rating: 4.5, downloads: "500M+", category: "Strategy" },
-		{ title: "PUBG Mobile", author: "Tencent Games", icon: "/icons/book.png", rating: 4.3, downloads: "1B+", category: "Action" },
-		{ title: "Candy Crush Saga", author: "King", icon: "/icons/dhung.jpg", rating: 4.4, downloads: "1B+", category: "Puzzle" },
-		{ title: "Among Us", author: "InnerSloth", icon: "/icons/book.png", rating: 4.2, downloads: "500M+", category: "Social" }
-	],
-	apps: [
-		{ title: "WhatsApp", author: "WhatsApp Inc.", icon: "/icons/dhung.jpg", rating: 4.3, downloads: "5B+", category: "Communication" },
-		{ title: "Instagram", author: "Meta", icon: "/icons/book.png", rating: 4.2, downloads: "1B+", category: "Social" },
-		{ title: "Spotify", author: "Spotify AB", icon: "/icons/dhung.jpg", rating: 4.5, downloads: "1B+", category: "Music" },
-		{ title: "Zoom", author: "Zoom Video Communications", icon: "/icons/book.png", rating: 4.1, downloads: "500M+", category: "Productivity" }
-	],
-	movies: [
-		{ title: "Netflix", author: "Netflix Inc.", icon: "/icons/book.png", rating: 4.1, downloads: "1B+", category: "Streaming" },
-		{ title: "Disney+", author: "Disney", icon: "/icons/dhung.jpg", rating: 4.3, downloads: "500M+", category: "Streaming" },
-		{ title: "Amazon Prime Video", author: "Amazon", icon: "/icons/book.png", rating: 4.0, downloads: "500M+", category: "Streaming" },
-		{ title: "YouTube", author: "Google", icon: "/icons/dhung.jpg", rating: 4.4, downloads: "5B+", category: "Video" }
-	],
-	books: [
-		{ title: "Kindle", author: "Amazon", icon: "/icons/book.png", rating: 4.2, downloads: "100M+", category: "Reading" },
-		{ title: "Audible", author: "Amazon", icon: "/icons/dhung.jpg", rating: 4.4, downloads: "100M+", category: "Audiobooks" },
-		{ title: "Google Play Books", author: "Google", icon: "/icons/book.png", rating: 4.1, downloads: "1B+", category: "Reading" },
-		{ title: "Wattpad", author: "Wattpad Corp", icon: "/icons/dhung.jpg", rating: 4.3, downloads: "100M+", category: "Writing" }
-	],
-	kids: [
-		{ title: "YouTube Kids", author: "Google", icon: "/icons/book.png", rating: 4.0, downloads: "100M+", category: "Video" },
-		{ title: "ABCmouse", author: "Age of Learning", icon: "/icons/dhung.jpg", rating: 4.2, downloads: "10M+", category: "Education" },
-		{ title: "PBS Kids Games", author: "PBS", icon: "/icons/book.png", rating: 4.3, downloads: "10M+", category: "Games" },
-		{ title: "Khan Academy Kids", author: "Khan Academy", icon: "/icons/dhung.jpg", rating: 4.5, downloads: "10M+", category: "Education" }
-	]
+	communication: [
+  {
+    "title": "Signal",
+    "category": "Communication",
+    "Author": "Signal Foundation",
+    "country": "US",
+    "icon": "icons/thumbnails/signal.webp",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Zom",
+    "category": "Communication",
+    "Author": "Zom LLC",
+    "country": "US",
+    "icon": "icons/thumbnails/zom.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Brave",
+    "category": "Browser",
+    "Author": "Brave Software, Inc",
+    "country": "US",
+    "icon": "icons/thumbnails/brave.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Firefox",
+    "category": "Browser",
+    "Author": "Mozilla",
+    "country": "US",
+    "icon": "icons/thumbnails/firefox.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Psiphon",
+    "category": "VPN",
+    "Author": "Psiphon",
+    "country": "Canada",
+    "icon": "icons/thumbnails/psiphon.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Tor Browser",
+    "category": "VPN/Browser",
+    "Author": "The Tor Project",
+    "country": "US",
+    "icon": "icons/thumbnails/tor-browser.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Monlam Dictionary",
+    "category": "Dictionary",
+    "Author": "Monlam IT",
+    "country": "India",
+    "icon": "icons/thumbnails/monlam-dictionary.webp",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "བོད་ཀྱི་ཚིག་མཛོད།1.7",
+    "category": "Dictionary",
+    "Author": "Phurba",
+    "country": "Tibet",
+    "icon": "icons/thumbnails/phurba.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "དུང་དཀར་ཚིག་མཛོད་ཆེན་མོ།",
+    "category": "Dictionary",
+    "Author": "",
+    "country": "Tibet",
+    "icon": "icons/thumbnails/dhung.jpg",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Monlam Font",
+    "category": "Font",
+    "Author": "Monlam IT",
+    "country": "India",
+    "icon": "icons/thumbnails/monlam-font.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "BDRC",
+    "category": "Buddhist Resource",
+    "Author": "BDRC",
+    "country": "US",
+    "icon": "icons/thumbnails/BUDA.svg",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Google Translate",
+    "category": "Transtor",
+    "Author": "Google Inc",
+    "country": "US",
+    "icon": "icons/thumbnails/google-translate.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "རྨི་ལམ་སློབ་གསོ།",
+    "category": "Children's Educational Resource",
+    "Author": "Lhasa Myilam culture communication co. LTD",
+    "country": "Tibet",
+    "icon": "icons/thumbnails/dream-book.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "བོད་སྐད་སྒྲོག་འདོན་གཏག་ཐབས།1.0.9",
+    "category": "Keyboard",
+    "Author": "Chongqing Caochen Technology Co., Ltd.",
+    "country": "Tibet",
+    "icon": "icons/thumbnails/tibetan-translator.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "ཡོངས་འཛིན་གཏག་ཐབས།2.6.2",
+    "category": "(In app translator/keyboard)",
+    "Author": "Hainan Yunzang Tibetan Information Technology Co., Ltd.",
+    "country": "Tibet",
+    "icon": "icons/thumbnails/yongzin.webp",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Claude Ai",
+    "category": "",
+    "Author": "Anthropic PBC",
+    "country": "United States",
+    "icon": "icons/thumbnails/claude.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Telegram",
+    "category": "Communication",
+    "Author": "Telegram FZ-LLC",
+    "country": "United Arab Emirates",
+    "icon": "icons/thumbnails/telegram.webp",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Whatsapp",
+    "category": "Communication",
+    "Author": "META Platforms",
+    "country": "United States",
+    "icon": "icons/thumbnails/whatsapp.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "རང་བྱུང་ཡེ་ཤེས་ཀྱི་ཚིག་མཛོད།",
+    "category": "Dictionary",
+    "Author": "",
+    "country": "",
+    "icon": "icons/thumbnails/",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Google",
+    "category": "browser",
+    "Author": "Google LLC",
+    "country": "United States",
+    "icon": "icons/thumbnails/chrome.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "现代藏语对照词典 ",
+    "category": "Dictionary",
+    "Author": "Yanan Zhang (DRAGON AGENCY Co., Ltd.)",
+    "country": "China",
+    "icon": "icons/thumbnails/现代藏语对照词典.webp",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "汉藏英辞典",
+    "category": "Dictionary",
+    "Author": "DRAGON AGENCY Co., Ltd.",
+    "country": "China",
+    "icon": "icons/thumbnails/汉藏英辞典.webp",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "DuckDuckGo",
+    "category": "Browser",
+    "Author": "DuckDuckGo, Inc.",
+    "country": "",
+    "icon": "icons/thumbnails/duckduckgo.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Find My Device",
+    "category": "Device Security",
+    "Author": "Google LLC",
+    "country": "",
+    "icon": "icons/thumbnails/findmy-device.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Proton VPN",
+    "category": "",
+    "Author": "Proton AG",
+    "country": "",
+    "icon": "icons/thumbnails/proton.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Obscura Camera",
+    "category": "",
+    "Author": "Guardian Project",
+    "country": "",
+    "icon": "icons/thumbnails/Obscura-Camera.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Orfox",
+    "category": "Browser",
+    "Author": "Guardian Project",
+    "country": "",
+    "icon": "icons/thumbnails/orfox.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "ProofMode",
+    "category": "",
+    "Author": "Guardian Project",
+    "country": "",
+    "icon": "icons/thumbnails/proofmode.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Dongkar app",
+    "category": "keyboard/translator",
+    "Author": "",
+    "country": "",
+    "icon": "icons/thumbnails/dhungkar.png",
+    "link": "",
+    "description": ""
+  },
+  {
+    "title": "Tibetan driving test",
+    "category": "Driving license code",
+    "Author": "",
+    "country": "",
+    "icon": "icons/thumbnails/",
+    "link": "",
+    "description": ""
+  }
+]
+};
+
+// Concatenate all apps and randomize
+const allApps = Object.values(tabApps).flat();
+const shuffledApps = allApps.sort(() => Math.random() - 0.5);
+
+const tabAppsWithAll = {
+	all: shuffledApps,
+	...tabApps
 };
 ---
 <Layout>
 	<!-- Hero Section -->
-	<Hero featuredApps={featuredApps} categories={categories} />
+	<Hero />
 	
 	<!-- Category Tabs Section -->
-	<section class="py-8 bg-white border-b border-gray-200" id="menu">
+	<section class="py-8 bg-white drop-shadow-2xl  " id="menu">
 		<div class="container mx-auto px-6">
 			<div class="flex flex-wrap gap-2 justify-center md:justify-start text-md">
 				<button class="tab-btn px-4 py-2 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors" data-tab="all">
-					All
+					All+
 				</button>
-				<button class="tab-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors" data-tab="games">
+				<button class="tab-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors" data-tab="communication">
 					Communication
 				</button>
-				<button class="tab-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors" data-tab="apps">
+				<button class="tab-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors" data-tab="vpn">
 					VPN
 				</button>
-				<button class="tab-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors" data-tab="movies">
+				<button class="tab-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors" data-tab="browsers">
 					Browsers
 				</button>
-				<button class="tab-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors" data-tab="books">
+				<button class="tab-btn px-4 py-2 bg-gray-100 text-gray-700 rounded-full font-medium hover:bg-gray-200 transition-colors" data-tab="others">
 					Others
 				</button>
 				
@@ -131,47 +318,15 @@ const tabApps = {
 	</section>
 
 	<!-- Tab Content Section -->
-	<section class="py-16 bg-gray-50">
+	<section class="py-16 bg-white">
 		<div class="container mx-auto px-6">
 			<div class="flex items-center justify-between mb-8">
 				<h2 class="text-3xl font-bold text-gray-900" id="tab-title">All Apps</h2>
 				<a href="#" class="text-blue-600 hover:text-blue-700 font-medium">See all</a>
 			</div>
 			<div class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 gap-6 justify-center" id="tab-content">
-				{tabApps.all.map(app => (
+				{tabAppsWithAll.all.map(app => (
 					<CardThumbnail title={app.title} author={app.author} icon={app.icon} rating={app.rating} category={app.category} />
-				))}
-			</div>
-		</div>
-	</section>
-
-
-
-	<!-- Top Charts Section -->
-	<section class="py-16 bg-gray-50">
-		<div class="container mx-auto px-6">
-			<div class="flex items-center justify-between mb-8">
-				<h2 class="text-3xl font-bold text-gray-900">Top Charts</h2>
-				<a href="#" class="text-blue-600 hover:text-blue-700 font-medium">See all</a>
-			</div>
-			<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 justify-center">
-				{topCharts.map((app, index) => (
-					<CardThumbnail title={app.title} author={app.author} icon={app.icon} rating={app.rating} />
-				))}
-			</div>
-		</div>
-	</section>
-
-	<!-- New Releases Section -->
-	 <section class="py-16 ">
-		<div class="container mx-auto px-6">
-			<div class="flex items-center justify-between mb-8">
-				<h2 class="text-3xl font-bold text-gray-900">New Releases</h2>
-				<a href="#" class="text-blue-600 hover:text-blue-700 font-medium">See all</a>
-			</div>
-			<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 justify-center">
-				{featuredApps.slice(0, 8).map(app => (
-					<Card title={app.title} author={app.author} icon={app.icon} rating={app.rating} category={app.category} />
 				))}
 			</div>
 		</div>
@@ -228,6 +383,13 @@ const tabApps = {
 			</div>
 		</div>
 	</section>
+
+	<!-- Scroll to Top Button -->
+	<button id="scrollToTop" class="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible z-50">
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+		</svg>
+	</button>
 </Layout>
 
 <script>
@@ -241,15 +403,10 @@ const tabApps = {
 		const tabData = {
 			all: {
 				title: "All Apps",
-				apps: [
-					{ title: "WhatsApp", author: "WhatsApp Inc.", icon: "icons/dhung.jpg", rating: 4.3, downloads: "5B+", category: "Communication" },
-					{ title: "Instagram", author: "Meta", icon: "icons/book.png", rating: 4.2, downloads: "1B+", category: "Social" },
-					{ title: "Clash of Clans", author: "Supercell", icon: "icons/dhung.jpg", rating: 4.5, downloads: "500M+", category: "Games" },
-					{ title: "Netflix", author: "Netflix Inc.", icon: "icons/book.png", rating: 4.1, downloads: "1B+", category: "Entertainment" }
-				]
+				apps: []
 			},
-			games: {
-				title: "Games",
+			communication: {
+				title: "Communication",
 				apps: [
 					{ title: "Clash of Clans", author: "Supercell", icon: "icons/dhung.jpg", rating: 4.5, downloads: "500M+", category: "Strategy" },
 					{ title: "PUBG Mobile", author: "Tencent Games", icon: "icons/book.png", rating: 4.3, downloads: "1B+", category: "Action" },
@@ -257,8 +414,8 @@ const tabApps = {
 					{ title: "Among Us", author: "InnerSloth", icon: "icons/book.png", rating: 4.2, downloads: "500M+", category: "Social" }
 				]
 			},
-			apps: {
-				title: "Apps",
+			vpn: {
+				title: "VPNs",
 				apps: [
 					{ title: "WhatsApp", author: "WhatsApp Inc.", icon: "icons/dhung.jpg", rating: 4.3, downloads: "5B+", category: "Communication" },
 					{ title: "Instagram", author: "Meta", icon: "icons/book.png", rating: 4.2, downloads: "1B+", category: "Social" },
@@ -266,8 +423,8 @@ const tabApps = {
 					{ title: "Zoom", author: "Zoom Video Communications", icon: "icons/book.png", rating: 4.1, downloads: "500M+", category: "Productivity" }
 				]
 			},
-			movies: {
-				title: "Movies & TV",
+			browsers: {
+				title: "browsers",
 				apps: [
 					{ title: "Netflix", author: "Netflix Inc.", icon: "icons/book.png", rating: 4.1, downloads: "1B+", category: "Streaming" },
 					{ title: "Disney+", author: "Disney", icon: "icons/dhung.jpg", rating: 4.3, downloads: "500M+", category: "Streaming" },
@@ -275,25 +432,20 @@ const tabApps = {
 					{ title: "YouTube", author: "Google", icon: "icons/dhung.jpg", rating: 4.4, downloads: "5B+", category: "Video" }
 				]
 			},
-			books: {
-				title: "Books",
+			others: {
+				title: "Others",
 				apps: [
 					{ title: "Kindle", author: "Amazon", icon: "icons/book.png", rating: 4.2, downloads: "100M+", category: "Reading" },
 					{ title: "Audible", author: "Amazon", icon: "icons/dhung.jpg", rating: 4.4, downloads: "100M+", category: "Audiobooks" },
 					{ title: "Google Play Books", author: "Google", icon: "icons/book.png", rating: 4.1, downloads: "1B+", category: "Reading" },
 					{ title: "Wattpad", author: "Wattpad Corp", icon: "icons/dhung.jpg", rating: 4.3, downloads: "100M+", category: "Writing" }
 				]
-			},
-			kids: {
-				title: "Kids",
-				apps: [
-					{ title: "YouTube Kids", author: "Google", icon: "icons/book.png", rating: 4.0, downloads: "100M+", category: "Video" },
-					{ title: "ABCmouse", author: "Age of Learning", icon: "icons/dhung.jpg", rating: 4.2, downloads: "10M+", category: "Education" },
-					{ title: "PBS Kids Games", author: "PBS", icon: "icons/book.png", rating: 4.3, downloads: "10M+", category: "Games" },
-					{ title: "Khan Academy Kids", author: "Khan Academy", icon: "icons/dhung.jpg", rating: 4.5, downloads: "10M+", category: "Education" }
-				]
-			}
+			}	
 		};
+
+		// Concatenate all apps and randomize for "all" tab
+		const allApps = Object.values(tabData).filter(tab => tab.title !== "All Apps").flatMap(tab => tab.apps);
+		tabData.all.apps = allApps.sort(() => Math.random() - 0.5);
 		
 		// Function to render app cards
 		function renderApps(apps) {
@@ -347,6 +499,28 @@ const tabApps = {
 		tabButtons.forEach(btn => {
 			btn.addEventListener('click', function() {
 				switchTab(this.dataset.tab);
+			});
+		});
+
+		// Scroll to top functionality
+		const scrollToTopBtn = document.getElementById('scrollToTop');
+		
+		// Show/hide button based on scroll position
+		window.addEventListener('scroll', function() {
+			if (window.pageYOffset > 300) {
+				scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+				scrollToTopBtn.classList.add('opacity-100', 'visible');
+			} else {
+				scrollToTopBtn.classList.add('opacity-0', 'invisible');
+				scrollToTopBtn.classList.remove('opacity-100', 'visible');
+			}
+		});
+
+		// Smooth scroll to top when button is clicked
+		scrollToTopBtn.addEventListener('click', function() {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
 			});
 		});
 	});

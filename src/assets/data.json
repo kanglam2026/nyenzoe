@@ -1,0 +1,272 @@
+[
+    {
+      "title": "Signal",
+      "category": "Communication",
+      "Author": "Signal Foundation",
+      "country": "US",
+      "icon": "icons/thumbnails/signal.webp",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Zom",
+      "category": "Communication",
+      "Author": "Zom LLC",
+      "country": "US",
+      "icon": "icons/thumbnails/zom.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Brave",
+      "category": "Browser",
+      "Author": "Brave Software, Inc",
+      "country": "US",
+      "icon": "icons/thumbnails/brave.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Firefox",
+      "category": "Browser",
+      "Author": "Mozilla",
+      "country": "US",
+      "icon": "icons/thumbnails/firefox.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Psiphon",
+      "category": "VPN",
+      "Author": "Psiphon",
+      "country": "Canada",
+      "icon": "icons/thumbnails/psiphon.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Tor Browser",
+      "category": "VPN/Browser",
+      "Author": "The Tor Project",
+      "country": "US",
+      "icon": "icons/thumbnails/tor-browser.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Monlam Dictionary",
+      "category": "Dictionary",
+      "Author": "Monlam IT",
+      "country": "India",
+      "icon": "icons/thumbnails/monlam-dictionary.webp",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "བོད་ཀྱི་ཚིག་མཛོད།1.7",
+      "category": "Dictionary",
+      "Author": "Phurba",
+      "country": "Tibet",
+      "icon": "icons/thumbnails/phurba.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "དུང་དཀར་ཚིག་མཛོད་ཆེན་མོ།",
+      "category": "Dictionary",
+      "Author": "",
+      "country": "Tibet",
+      "icon": "icons/thumbnails/dhung.jpg",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Monlam Font",
+      "category": "Font",
+      "Author": "Monlam IT",
+      "country": "India",
+      "icon": "icons/thumbnails/monlam-font.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "BDRC",
+      "category": "Buddhist Resource",
+      "Author": "BDRC",
+      "country": "US",
+      "icon": "icons/thumbnails/BUDA.svg",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Google Translate",
+      "category": "Transtor",
+      "Author": "Google Inc",
+      "country": "US",
+      "icon": "icons/thumbnails/google-translate.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "རྨི་ལམ་སློབ་གསོ།",
+      "category": "Children's Educational Resource",
+      "Author": "Lhasa Myilam culture communication co. LTD",
+      "country": "Tibet",
+      "icon": "icons/thumbnails/dream-book.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "བོད་སྐད་སྒྲོག་འདོན་གཏག་ཐབས།1.0.9",
+      "category": "Keyboard",
+      "Author": "Chongqing Caochen Technology Co., Ltd.",
+      "country": "Tibet",
+      "icon": "icons/thumbnails/tibetan-translator.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "ཡོངས་འཛིན་གཏག་ཐབས།2.6.2",
+      "category": "(In app translator/keyboard)",
+      "Author": "Hainan Yunzang Tibetan Information Technology Co., Ltd.",
+      "country": "Tibet",
+      "icon": "icons/thumbnails/yongzin.webp",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Claude Ai",
+      "category": "",
+      "Author": "Anthropic PBC",
+      "country": "United States",
+      "icon": "icons/thumbnails/claude.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Telegram",
+      "category": "Communication",
+      "Author": "Telegram FZ-LLC",
+      "country": "United Arab Emirates",
+      "icon": "icons/thumbnails/telegram.webp",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Whatsapp",
+      "category": "Communication",
+      "Author": "META Platforms",
+      "country": "United States",
+      "icon": "icons/thumbnails/whatsapp.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "རང་བྱུང་ཡེ་ཤེས་ཀྱི་ཚིག་མཛོད།",
+      "category": "Dictionary",
+      "Author": "",
+      "country": "",
+      "icon": "icons/thumbnails/",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Google",
+      "category": "browser",
+      "Author": "Google LLC",
+      "country": "United States",
+      "icon": "icons/thumbnails/chrome.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "现代藏语对照词典 ",
+      "category": "Dictionary",
+      "Author": "Yanan Zhang (DRAGON AGENCY Co., Ltd.)",
+      "country": "China",
+      "icon": "icons/thumbnails/现代藏语对照词典.webp",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "汉藏英辞典",
+      "category": "Dictionary",
+      "Author": "DRAGON AGENCY Co., Ltd.",
+      "country": "China",
+      "icon": "icons/thumbnails/汉藏英辞典.webp",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "DuckDuckGo",
+      "category": "Browser",
+      "Author": "DuckDuckGo, Inc.",
+      "country": "",
+      "icon": "icons/thumbnails/duckduckgo.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Find My Device",
+      "category": "Device Security",
+      "Author": "Google LLC",
+      "country": "",
+      "icon": "icons/thumbnails/findmy-device.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Proton VPN",
+      "category": "",
+      "Author": "Proton AG",
+      "country": "",
+      "icon": "icons/thumbnails/proton.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Obscura Camera",
+      "category": "",
+      "Author": "Guardian Project",
+      "country": "",
+      "icon": "icons/thumbnails/Obscura-Camera.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Orfox",
+      "category": "Browser",
+      "Author": "Guardian Project",
+      "country": "",
+      "icon": "icons/thumbnails/orfox.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "ProofMode",
+      "category": "",
+      "Author": "Guardian Project",
+      "country": "",
+      "icon": "icons/thumbnails/proofmode.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Dongkar app",
+      "category": "keyboard/translator",
+      "Author": "",
+      "country": "",
+      "icon": "icons/thumbnails/dhungkar.png",
+      "link": "",
+      "description": ""
+    },
+    {
+      "title": "Tibetan driving test",
+      "category": "Driving license code",
+      "Author": "",
+      "country": "",
+      "icon": "icons/thumbnails/",
+      "link": "",
+      "description": ""
+    }
+  ]
