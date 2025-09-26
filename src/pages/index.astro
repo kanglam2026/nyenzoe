@@ -2,7 +2,7 @@
 import Hero2 from '../components/Hero2.astro';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import EditorsChoice from '../components/EditorsChoice.astro';
+// import EditorsChoice from '../components/EditorsChoice.astro';
 
 
 
@@ -274,7 +274,7 @@ const allApps = [
     "category": "Driving license code",
     "Author": "",
     "country": "",
-    "icon": "icons/thumbnails/",
+    "icon": "icons/thumbnails/drivingtest.webp",
     "link": "",
     "description": ""
   }
@@ -297,10 +297,10 @@ const orderedCategories = Object.keys(categoryToApps).filter(Boolean);
 
 
 	{orderedCategories.map(category => (
-		<section class={category === 'Communication' ? 'py-16 bg-gray-50' : 'py-16 bg-white'}>
+		<section class="py-16 ">
 			<div class="container mx-auto px-6">
 				<div class="flex items-center justify-between mb-8">
-					<h2 class="text-3xl font-bold text-gray-900">{category}</h2>
+					<h2 class="text-3xl font-bold text-blue-500">{category}</h2>
 				</div>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 					{categoryToApps[category].map(app => (
@@ -319,6 +319,8 @@ const orderedCategories = Object.keys(categoryToApps).filter(Boolean);
 	
 	<!-- Editor's Choice Section -->
 	<!-- <EditorsChoice></EditorsChoice> -->
+  <div class="relative mx-auto w-full items-baseline  h-10 bg-[url(border-bottom.svg)]">
+  </div>
 </Layout>
 
 

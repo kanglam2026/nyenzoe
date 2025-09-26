@@ -2,8 +2,10 @@
 // Props: Receive the array from the parent
 const { featuredApps, categories } = Astro.props;
 ---
+ <!-- <section class="bg-blue-500 bg-[url('border.svg')] bg-cover bg-center bg-blend-multiply  w-full bg-fixed" > -->
+<section class=" bg-gradient-to-br from-blue-950 to-blue-400   bg-blend-multiply  " >
+    
 
-<section class=" bg-gradient-to-br from-blue-950 to-blue-400">
     <div class="container mx-auto px-6 py-10 md:py-12 lg:py-12 ">
         <div class="rounded-lg flex items-center justify-center my-5">
             <div class="flex items-center space-x-4">
@@ -30,10 +32,10 @@ const { featuredApps, categories } = Astro.props;
             </div>
         </div>
         <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-6xl font-bold text-gray-100 mb-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-blue-100 mb-4">
                 Discover Amazing Apps
             </h1>
-            <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+            <p class="text-xl text-blue-300 mb-8 max-w-2xl mx-auto">
                 Find the perfect Apps for your device. Download  from our curated collection.
             </p>
         </div>
@@ -44,6 +46,8 @@ const { featuredApps, categories } = Astro.props;
         <div class="flex justify-center ">
             <!-- <a href="#menu" class="text-xl font-bold text-blue-500 bg-white px-10 py-3 rounded-full shadow-md border-2 border-blue-400">EXPLORE</a> -->
         </div>
+    </div>
+    <div class="relative mx-auto w-full items-baseline  h-10 bg-[url(border.svg)]">
     </div>
 </section>
 
