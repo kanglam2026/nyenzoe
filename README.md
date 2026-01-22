@@ -31,7 +31,7 @@ Nyenzoe is an app distribution platform designed to help users discover quality 
 ```
 Nyenzoe-App Distribution Platform/
 ├── public/                          # Static assets served directly
-│   ├── app/                        # Application-related public assets
+│   ├── app/                        #  public assets for apk file directly sits in here
 │   └── icons/
 │       └── thumbnails/             # App icon thumbnails
 ├── src/                            # Source code
