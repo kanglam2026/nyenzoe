@@ -6,18 +6,29 @@ A modern web application for discovering and distributing privacy-focused  appli
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Available Commands](#available-commands)
-- [Technology Stack](#technology-stack)
+- [Nyenzoe (མཉེན་མཛོད།) App Distribution Platform](#nyenzoe-མཉེནམཛོད-app-distribution-platform)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🌟Overview](#overview)
+  - [✨Features](#features)
+  - [🚀Project Structure](#project-structure)
+  - [🎯Key Components](#key-components)
+    - [Pages](#pages)
+    - [Components](#components)
+    - [Data](#data)
+  - [🛠️Getting Started](#️getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [📦Available Commands](#available-commands)
+  - [🛠️ Technology Stack](#️-technology-stack)
+  - [📝Project Notes](#project-notes)
+  - [🚀Deployment](#deployment)
+  - [📞Support](#support)
 
 ## 🌟Overview
 
 Nyenzoe is an app distribution platform designed to help users discover quality applications focused on privacy, security, and open-source principles. The platform provides an intuitive interface for browsing applications by category with detailed app cards, ratings, and download information.
 
-## ✨ Features
+## ✨Features
 
 - **Browse Applications**: Discover apps categorized by type (Communication, Browser, VPN, etc.)
 - **App Details**: View comprehensive information including author, country of origin, ratings, and downloads
@@ -26,7 +37,7 @@ Nyenzoe is an app distribution platform designed to help users discover quality 
 - **Fast Performance**: Built with Astro for optimal performance and minimal JavaScript
 - **Mobile Navigation**: Smart mobile menu for easy navigation on smaller screens
 
-## 🚀 Project Structure
+## 🚀Project Structure
 
 ```
 Nyenzoe-App Distribution Platform/
@@ -70,7 +81,7 @@ Nyenzoe-App Distribution Platform/
 └── README.md                      # This file
 ```
 
-## 🎯 Key Components
+## 🎯Key Components
 
 ### Pages
 - **index.astro**: Main landing page displaying the app distribution platform with all applications
@@ -85,7 +96,7 @@ Nyenzoe-App Distribution Platform/
 ### Data
 - **data.json**: Central database containing all application metadata including title, category, author, country, icon, and description
 
-## 🛠️ Getting Started
+## 🛠️Getting Started
 
 ### Prerequisites
 - Node.js (v18 or higher)
@@ -115,7 +126,7 @@ npm run dev
 
 4. Open your browser and navigate to `http://localhost:3000`
 
-## 📦 Available Commands
+## 📦Available Commands
 
 | Command | Description |
 |---------|-------------|
@@ -133,7 +144,7 @@ npm run dev
 - **TypeScript**: For type-safe development
 - **Strapi**: CMS integration for content management (via `lib/strapi.ts`)
 
-## 📝 Project Notes
+## 📝Project Notes
 
 - Multiple page versions (index, index2, index-backup, index-strapi) suggest different design iterations or CMS integration approaches
 - App data is currently stored in `data.json` but can be integrated with Strapi CMS using the provided Strapi library
@@ -145,7 +156,7 @@ npm run dev
   - VPN (Psiphon, Tor Browser)
   - And more
 
-## 🚀 Deployment
+## 🚀Deployment
 
 Build the project:
 ```bash
@@ -154,7 +165,7 @@ pnpm run build
 
 The `./dist/` folder contains the static build ready for deployment to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).
 
-## 📞 Support
+## 📞Support
 
 For more information about Astro, visit [Astro Documentation](https://docs.astro.build)
 
