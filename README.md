@@ -2,7 +2,7 @@
 
 ![public/screenshot.png](public/screenshot.png)
 
-A modern web application for discovering and distributing privacy-focused and open-source applications. Built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/), this platform showcases a curated collection of applications across multiple categories.
+A modern web application for discovering and distributing privacy-focused  applications. Built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/), this platform showcases a curated collection of applications across multiple categories.
 
 ## 📋 Table of Contents
 
@@ -13,7 +13,7 @@ A modern web application for discovering and distributing privacy-focused and op
 - [Available Commands](#available-commands)
 - [Technology Stack](#technology-stack)
 
-## 🌟 Overview
+## 🌟Overview
 
 Nyenzoe is an app distribution platform designed to help users discover quality applications focused on privacy, security, and open-source principles. The platform provides an intuitive interface for browsing applications by category with detailed app cards, ratings, and download information.
 
