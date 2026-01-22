@@ -107,7 +107,7 @@ Nyenzoe-App Distribution Platform/
 1. Clone the repository:
 ```bash
 git clone https://github.com/kanglam2026/nyenzoe.git
-cd "Nyenzoe-App Distribution Platform"
+cd "nyenzoe"
 ```
 
 2. Install dependencies:
