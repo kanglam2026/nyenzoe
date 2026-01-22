@@ -106,7 +106,7 @@ Nyenzoe-App Distribution Platform/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/kanglam2026/nyenzoe.git
 cd "Nyenzoe-App Distribution Platform"
 ```
 
