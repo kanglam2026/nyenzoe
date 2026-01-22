@@ -1,4 +1,4 @@
-# Butterbox App Distribution Platform
+# Nyenzoe (མཉེན་མཛོད།) App Distribution Platform
 
 ![public/screenshot.png](public/screenshot.png)
 
@@ -15,7 +15,7 @@ A modern web application for discovering and distributing privacy-focused and op
 
 ## 🌟 Overview
 
-Butterbox is an app distribution platform designed to help users discover quality applications focused on privacy, security, and open-source principles. The platform provides an intuitive interface for browsing applications by category with detailed app cards, ratings, and download information.
+Nyenzoe is an app distribution platform designed to help users discover quality applications focused on privacy, security, and open-source principles. The platform provides an intuitive interface for browsing applications by category with detailed app cards, ratings, and download information.
 
 ## ✨ Features
 
@@ -29,7 +29,7 @@ Butterbox is an app distribution platform designed to help users discover qualit
 ## 🚀 Project Structure
 
 ```
-Butterbox-App Distribution Platform/
+Nyenzoe-App Distribution Platform/
 ├── public/                          # Static assets served directly
 │   ├── app/                        # Application-related public assets
 │   └── icons/
@@ -96,7 +96,7 @@ Butterbox-App Distribution Platform/
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd "Butterbox-App Distribution Platform"
+cd "Nyenzoe-App Distribution Platform"
 ```
 
 2. Install dependencies:
